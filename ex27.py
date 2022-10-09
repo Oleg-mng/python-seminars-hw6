@@ -9,5 +9,6 @@ import math
 def print_pi():
     toch=int(input('Задайте точность вычисления: '))
     math.pi
-    print(lambda q: pi*toch//1/toch)
+    q=lambda: pi*toch//1/toch
+    print(q())
 print_pi()
