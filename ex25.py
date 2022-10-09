@@ -12,7 +12,9 @@
 # pr = 1
 
 n = int(input('Введите число N: '))
-pr = 1
-print(lambda pr: (for i in range(1, n+1)): pr*i)
+# q=lambda pr, i: pr*i
+# q = map(lambda pr : pr*i range(1, n+1))
+q=lambda pr: [i*pr for i in range(1, n+1)]
+print(q(1))
 
 # print(tuple(filter(lambda num: my_list.count(num) == 1, my_list)))
